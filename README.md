@@ -1,4 +1,6 @@
-Estudo de Rust usando como referencia o livro online de Rust.
+Estudo de Rust usando como referencia o livro online de Rust que esta disponivel exemplos:
+
+https://rust-lang.github.io/book/second-edition/ch01-00-introduction.html
 
 cargo new hello_world --bin
 
