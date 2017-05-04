@@ -5,3 +5,6 @@ authors = ["Diego W. Antunes <devlware@gmail.com>"]
 
 [dependencies]
 rand = "0.3.14"
+
+[profile.test]
+opt-level = 1

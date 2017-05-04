@@ -1,5 +1,4 @@
 language: rust
-rust:
-    - stable
-    - beta
-script: make all
+script:
+    cd guessing_game; cargo build
+    cargo test
