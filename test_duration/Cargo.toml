@@ -1,0 +1,7 @@
+[package]
+name = "test_duration"
+version = "0.1.0"
+authors = ["Diego W. Antunes <devlware@gmail.com>"]
+
+[dependencies]
+rand = "0.4"

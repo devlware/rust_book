@@ -1,0 +1,7 @@
+[package]
+name = "vectest"
+version = "0.1.0"
+authors = ["Diego W. Antunes <devlware@gmail.com>"]
+
+[dependencies]
+arrayvec = "0.4.6"
