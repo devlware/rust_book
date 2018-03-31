@@ -8,10 +8,6 @@ mod tests {
 
 mod client;
 
-
 mod network {
-    fn connect() {
-
-    }
+    fn connect() {}
 }
-

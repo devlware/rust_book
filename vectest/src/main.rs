@@ -3,7 +3,6 @@ extern crate arrayvec;
 use arrayvec::ArrayVec;
 
 fn main() {
-
     let mut output = ArrayVec::<[u8; 13]>::new();
     println!("sizeof: {}", output.len());
     let broker: u16 = 0xAAFF;

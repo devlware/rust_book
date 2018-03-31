@@ -1,5 +1,5 @@
-use std::time::{Duration, Instant};
 use std::thread::sleep;
+use std::time::{Duration, Instant};
 extern crate rand;
 use rand::distributions::{IndependentSample, Range};
 
@@ -11,8 +11,7 @@ fn dom_something_heavy() {
 }
 
 fn main() {
-
-    let mut interval = Duration::new(10, 0);; //seconds
+    let mut interval = Duration::new(10, 0); //seconds
     let millis = Duration::from_millis(13);
     interval = interval.checked_sub(millis).unwrap();
 
@@ -27,7 +26,7 @@ fn main() {
         println!("Going to sleep: {:?}", need_to_sleep);
         let delay = match need_to_sleep {
             Some(v) => sleep(v),
-            None => sleep(Duration::new(5,0)),
+            None => sleep(Duration::new(5, 0)),
         };
     }
 }

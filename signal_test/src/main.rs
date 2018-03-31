@@ -4,9 +4,9 @@ use std::process;
 extern crate chan;
 extern crate chan_signal;
 
+use std::env;
 use std::thread;
 use std::time::Duration;
-use std::env;
 
 use chan_signal::Signal;
 

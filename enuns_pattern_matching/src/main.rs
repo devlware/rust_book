@@ -22,7 +22,6 @@ struct IpAddr {
     address: String,
 }
 
-
 // Another option to define the enum without defining as extra struct is to use
 // enum IpAddr {
 //    V4(String),
@@ -51,11 +50,11 @@ struct IpAddr {
 // strings, numeric types or structs for example. You can even include another enum.
 
 //struct Ipv4Addr {
-    // details elided
+// details elided
 //}
 
 //struct Ipv6Addr {
-    // details elided
+// details elided
 //}
 
 //enum IpAddr {
@@ -86,13 +85,11 @@ struct MoveMessage {
 struct WriteMessage(String); // tuple struct
 struct ChangeColorMessage(i32, i32, i32); // tuple struct
 
-
 impl Message {
     fn call(&self) {
         // method body would be defined here
     }
 }
-
 
 enum Coin {
     Penny,
@@ -116,7 +113,6 @@ fn plus_one(x: Option<i32>) -> Option<i32> {
         Some(i) => Some(i + 1),
     }
 }
-
 
 fn main() {
     println!("Hello, world!");

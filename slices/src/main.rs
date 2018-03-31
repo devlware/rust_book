@@ -7,7 +7,7 @@
 
 fn main() {
     let mut s = String::from("hello world");
-    let word = first_word(&s);  // word will get the value 5.
+    let word = first_word(&s); // word will get the value 5.
 
     // The following line will crash on compiling.
     //s.clear();  // This empties the String, making it equal to "".
@@ -43,15 +43,15 @@ fn main() {
 
     // Slices can also be used with other objects.
     let a = [1, 2, 3, 4, 5];
-    let slice = &a[1..3];  // This slice has the type &[i32]
+    let slice = &a[1..3]; // This slice has the type &[i32]
 }
 
 fn get_first_word(s: &String) -> &str {
     let bytes = s.as_bytes();
 
-    for (i,&item) in bytes.iter().enumerate() {
+    for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {
-            return &s[0..i];  // Return from the beginning until the index of the ' '.
+            return &s[0..i]; // Return from the beginning until the index of the ' '.
         }
     }
 

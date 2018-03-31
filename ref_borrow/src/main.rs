@@ -1,4 +1,3 @@
-
 // The Rules of References
 
 // Let’s recap what we’ve discussed about references:
@@ -14,8 +13,8 @@ fn main() {
     // Here we have a reference to an object as a parameter, this way the function
     // do not take the ownership of the value.
     let len = calculate_length(&s1); // A reference that refers to the value of s1.
-    // This way when the function ends the value will not be dropped when the reference
-    // goes out of scope.
+                                     // This way when the function ends the value will not be dropped when the reference
+                                     // goes out of scope.
     println!("The length of '{}' is {}.", s1, len);
 
     let mut s = String::from("Diego");
@@ -53,7 +52,8 @@ fn try_simultaneous_reference() {
     let r2 = &mut s;
 }
 
-fn calculate_length(s: &String) -> usize { // s is a reference to a String
+fn calculate_length(s: &String) -> usize {
+    // s is a reference to a String
     s.len()
 } // Here, s goes out of scope. But because it does not have ownership of what
   // it refers to, nothing happens.

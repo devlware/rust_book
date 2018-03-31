@@ -22,7 +22,7 @@ fn main() {
     // FIXME this code will fail because user1 is not mutable.
     //user1.email = String::from("rust_lang@rust.com");
 
-    let mut user2 =  User {
+    let mut user2 = User {
         email: String::from("someone@example.com"),
         username: String::from("someusername123"),
         active: true,
@@ -48,7 +48,7 @@ fn main() {
     // Here, .. syntax specifies that the other fields of user1 should
     // be used to fill the missing variables/fiedlds. Very clever.
     let user4 = User {
-        email:String::from("email@memail.com"),
+        email: String::from("email@memail.com"),
         username: String::from("myusername"),
         ..user1
     };
@@ -57,8 +57,8 @@ fn main() {
     struct Color(i32, i32, i32);
     struct Point(i32, i32, i32);
 
-    let black = Color(0,0,0);
-    let origin = Point(0,0,0);
+    let black = Color(0, 0, 0);
+    let origin = Point(0, 0, 0);
 }
 
 // Field init shorthand, userd to create and return a User instance.

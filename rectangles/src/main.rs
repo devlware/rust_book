@@ -9,7 +9,10 @@ fn main() {
     let width1 = 30;
 
     let rect1 = (30, 50);
-    let rect2 = Rectangle{ length: 13, width: 31 };
+    let rect2 = Rectangle {
+        length: 13,
+        width: 31,
+    };
 
     println!(
         "The area of the rectangle is {} square pixels.",
@@ -25,7 +28,6 @@ fn main() {
         "The area of the rectangle is {} square pixels.",
         area2(&rect2)
     );
-
 
     // In the beginning of the file we add the annotation to derive the Debug
     // trait and print the Rectangle instance usgin the debug formatting.

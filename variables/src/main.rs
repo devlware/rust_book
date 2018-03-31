@@ -1,5 +1,4 @@
 fn main() {
-
     const MAX_POINTS: u32 = 100_000;
     println!("Value for the constant is: {}", MAX_POINTS);
     let mut x = 5;
@@ -65,10 +64,22 @@ fn main() {
 
     // Array in Rust:
     // Arrays can't have its size changed.
-    let a = [1,2,3,4,5];
+    let a = [1, 2, 3, 4, 5];
 
-    let months = ["January", "February", "March", "April", "May", "June", "July",
-              "August", "September", "October", "November", "December"];
+    let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ];
 
     anothe_function();
 }

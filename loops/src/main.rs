@@ -23,7 +23,7 @@ fn main() {
     }
 
     println!("using a for loop to print the contents of an array");
-    let b = [2,3,4,5,5,6];
+    let b = [2, 3, 4, 5, 5, 6];
     for element in b.iter() {
         println!("the value is: {}", element);
     }
@@ -43,8 +43,8 @@ fn main() {
 }
 
 fn print_in_farad(t: f32) {
-    let temp_far = (t  * 1.8) + 32.0;
-    println!("temp {} in Celcius is {} in Farenheit.", t,  temp_far);
+    let temp_far = (t * 1.8) + 32.0;
+    println!("temp {} in Celcius is {} in Farenheit.", t, temp_far);
 }
 
 // Celsius	Fahrenheit	°F = °C × 1.8 + 32
